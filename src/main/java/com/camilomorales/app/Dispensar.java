@@ -8,8 +8,15 @@ public class Dispensar {
 
         System.out.println("Serial: " + miDispensador.saberSerial());
         System.out.println("Marca: " + miDispensador.saberMarca());
-        System.out.println("Cantidad Maxima: " + miDispensador.saberCantidadMaxima());git 
+        System.out.println("Cantidad Maxima: " + miDispensador.saberCantidadMaxima());
         System.out.println("Cantidad Actual: " + miDispensador.saberCantidadActual());
-        System.out.println("Temperatura: " + miDispensador.saberTemperatura());
+
+
+        miDispensador.servir(10);
+        miDispensador.llenar();
+        miDispensador.vaciar();
+        miDispensador.calentar(27.0);
+        miDispensador.enfriar(10.2);
+        miDispensador.mostrarNivel();
     }
 }
